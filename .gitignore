@@ -1,0 +1,10 @@
+node_modules/
+*.log
+npm-debug.log*
+build/
+.vscode/
+.idea/
+.vimrc
+.DS_Store
+.docz/
+.env

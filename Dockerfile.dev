@@ -1,0 +1,7 @@
+FROM node:13-alpine as layout-constructor-ui
+WORKDIR /code
+COPY . .
+RUN cp .env.example .env &>- || true
+RUN npm install
+EXPOSE 8800
+CMD ["npm", "start"]

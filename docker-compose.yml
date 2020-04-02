@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  layout-constructor-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 8800:8800
+    volumes:
+      - .:/code
+      - /code/node_modules
+    networks:
+      - layout_constructor_ui
+
+networks:
+  layout_constructor_ui:
