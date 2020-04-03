@@ -18,3 +18,4 @@ docker-compose --file docker-compose.prod.yml up
 GET http://localhost:8181/
 
 TEST 1
+TEST 2
